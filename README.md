@@ -8,7 +8,8 @@ import wfdb
 import pandas as pd
 import os
 from scipy.stats import norm
-import seaborn as sns´´´´
+import seaborn as sns```
+#hahajja
 
 record_name= '100001_ECG'
 
