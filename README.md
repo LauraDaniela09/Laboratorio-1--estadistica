@@ -10,7 +10,7 @@ import os
 from scipy.stats import norm
 import seaborn as sns
 
-record_name= '100001_ECG'
+```record_name= '100001_ECG'
 
 
 señal,caracter = wfdb.rdsamp(record_name)
