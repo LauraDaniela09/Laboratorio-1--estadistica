@@ -92,6 +92,28 @@ Calcula la `varianza`, que es la dispersión de los datos con respecto a la medi
 
 **Coeficiente de variación**
 ```python
-
+Coeficiente=(desviacionEstandar/promedio)*100
+print("Coeficiente de Variacion:", Coeficiente)
 ```
+Mide la variabilidad relativa de los datos con respecto a su media en valor porcentual.
 
+---
+
+**Histograma y función de probabilidad**
+```python
+plt.figure()
+plt.hist(signal,bins=100,density=0,color='blue')
+plt.title("Histograma")
+plt.xlabel("Voltaje(μv)")
+plt.ylabel("Frecuencia ")
+plt.show()
+```
+Grafica un histograma y nombra los ejes *x* y *y*.
+```python
+sns.histplot(signal, kde=True, bins=30, color='red')
+plt.hist(signal, bins=30, edgecolor='blue')
+plt.title('Función de probabilidad')
+plt.xlabel('Voltaje(μv)')
+plt.ylabel('Frecuencia')
+plt.show()
+```
