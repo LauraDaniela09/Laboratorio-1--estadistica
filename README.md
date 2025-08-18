@@ -132,3 +132,4 @@ plt.ylabel('Frecuencia')
 plt.show()
 ```
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
+<h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
