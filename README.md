@@ -59,7 +59,9 @@ plt.ylabel("Voltaje(μm)")
 plt.grid(True)
 plt.show()
 ```
-<img width="583" height="455" alt="image" src="https://github.com/user-attachments/assets/c08a149a-20e0-46b5-b3e1-1fb07f31fe7a" />
+<p align="center">
+<img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/c08a149a-20e0-46b5-b3e1-1fb07f31fe7a" />
+</p>
 
 Recortar la señal entre las muestras `2,000,000` y `2,010,000` (10,000 muestras). Se recomienda no tomar los valores iniciales ya que pueden ser muy variables mientras la extracción de la señal se estabiliza.
 Se grafica esta nueva señal llamada `signal`.
@@ -116,7 +118,9 @@ plt.xlabel("Voltaje(μv)")
 plt.ylabel("Frecuencia ")
 plt.show()
 ```
+<p align="center">
 <img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/dde26283-daea-45b9-83b7-fcc66d5e6ea4" />
+</p>
 
 Grafica un histograma y nombra los ejes *x* y *y*.
 ```python
