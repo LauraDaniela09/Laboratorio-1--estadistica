@@ -39,6 +39,9 @@ plt.show()
 caracter
 signal=señal[2000000:2010000]
 ```
+<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/46baf1ac-03c6-494a-8272-ae6b86bde2b9" />
+
+
 Grafica la señal completa, nombra los ejes (Ej:`muestras v.s voltaje`).
 `caracter` muestra los metadatos, como frecuencia de muestreo, unidades, etc.
 
