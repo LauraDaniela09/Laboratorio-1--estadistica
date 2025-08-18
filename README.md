@@ -147,7 +147,7 @@ plt.show()
 signal2= df.iloc[:, 1]
 ```
 <p align="center">
-<img width="855" height="470" alt="image" src="https://github.com/user-attachments/assets/83db39ad-3948-4408-97e7-d1b2bed5b1cf" />
+<img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/83db39ad-3948-4408-97e7-d1b2bed5b1cf" />
 </p>
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
