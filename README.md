@@ -131,4 +131,4 @@ plt.xlabel('Voltaje(μv)')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
-
+<h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
