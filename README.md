@@ -56,6 +56,9 @@ plt.xlabel("Muestras")
 plt.ylabel("Voltaje(μm)")
 plt.grid(True)
 plt.show()
+
+<img width="583" height="455" alt="image" src="https://github.com/user-attachments/assets/c08a149a-20e0-46b5-b3e1-1fb07f31fe7a" />
+
 ```
 Recortar la señal entre las muestras `2,000,000` y `2,010,000` (10,000 muestras). Se recomienda no tomar los valores iniciales ya que pueden ser muy variables mientras la extracción de la señal se estabiliza.
 Se grafica esta nueva señal llamada `signal`.
