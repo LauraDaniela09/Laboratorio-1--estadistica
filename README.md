@@ -132,4 +132,17 @@ plt.ylabel('Frecuencia')
 plt.show()
 ```
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
+```python
+df = pd.read_csv('medicion1.csv')
+x = df.iloc[:, 0]
+y = df.iloc[:, 1]
+plt.figure(figsize=(10, 5))
+plt.plot(x,y)
+plt.title('Señal extraida del generador')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Voltaje (mV)')
+plt.grid(True)
+plt.show()
+signal2= df.iloc[:, 1]
+```
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
