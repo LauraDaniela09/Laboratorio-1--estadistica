@@ -153,7 +153,7 @@ signal2= df.iloc[:, 1]
 
 + **promedio o media**
   
-  ```pyton
+```pyton
 suma = 0
 n = 0
 for muestra in signal2:
