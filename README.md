@@ -162,4 +162,5 @@ for muestra in signal2:
   promedio2=suma/n
 print("promedio=", promedio2)
 ```
+
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
