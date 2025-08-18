@@ -132,6 +132,7 @@ plt.ylabel('Frecuencia')
 plt.show()
 ```
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
+
 ```python
 df = pd.read_csv('medicion1.csv')
 x = df.iloc[:, 0]
