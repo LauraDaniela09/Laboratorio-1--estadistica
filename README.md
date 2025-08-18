@@ -4,7 +4,7 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 ---
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
-‣**importación de librerias y carga de señal**
+▶ **importación de librerias y carga de señal**
 ```python
 !pip install wfdb
 import matplotlib.pyplot as plt
@@ -26,7 +26,7 @@ Carga la señal, `record_name` debe ser el nombre del archivo (ej: `100001_ECG`)
 Nombra la señal `señal`.
 
 ---
-‣**visualización señal**
+▶ **visualización señal**
 ```python
 plt.figure(figsize=(12, 4))
 plt.plot(señal)
@@ -49,7 +49,7 @@ Grafica la señal completa, nombra los ejes (Ej:`muestras v.s voltaje`).
 
 ---
 
-‣**Selección de un segmento de la señal**
+▶ **Selección de un segmento de la señal**
 ```python
 signal=señal[2000000:2010000]
 plt.plot(signal)
@@ -68,7 +68,7 @@ Se grafica esta nueva señal llamada `signal`.
 
 ---
 
-‣**Promedio o media**
+▶ **Promedio o media**
 ```python
 suma = 0
 n = 0
@@ -83,7 +83,7 @@ Se calcula de forma manual la media usando un bucle `for` y finalmente se imprim
 
 ---
 
-‣**Varianza y desviación estándar**
+▶ **Varianza y desviación estándar**
 ```python
 sumaCuadrados = 0
 for muestra in signal:
@@ -100,7 +100,7 @@ Calcula la `varianza`, que es la dispersión de los datos con respecto a la medi
 
 ---
 
-‣**Coeficiente de variación**
+▶ **Coeficiente de variación**
 ```python
 Coeficiente=(desviacionEstandar/promedio)*100
 print("Coeficiente de Variacion:", Coeficiente)
@@ -109,7 +109,7 @@ Mide la variabilidad relativa de los datos con respecto a su media en valor porc
 
 ---
 
-‣**Histograma y función de probabilidad**
+▶ **Histograma y función de probabilidad**
 ```python
 plt.figure()
 plt.hist(signal,bins=100,density=0,color='blue')
