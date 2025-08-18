@@ -114,6 +114,8 @@ plt.xlabel("Voltaje(μv)")
 plt.ylabel("Frecuencia ")
 plt.show()
 ```
+<img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/dde26283-daea-45b9-83b7-fcc66d5e6ea4" />
+
 Grafica un histograma y nombra los ejes *x* y *y*.
 ```python
 sns.histplot(signal, kde=True, bins=30, color='red')
@@ -123,4 +125,4 @@ plt.xlabel('Voltaje(μv)')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
-<img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/dde26283-daea-45b9-83b7-fcc66d5e6ea4" />
+
