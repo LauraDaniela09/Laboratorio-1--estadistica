@@ -5,7 +5,7 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Inicio] --> B[Instalar e importar librerías]
     B --> C[Cargar señal ECG]
     C --> D[Graficar señal completa]
@@ -15,7 +15,7 @@ flowchart TD
     G --> H[Calcular varianza y Desv. Estándar]
     H --> I[Coeficiente de variación]
     I --> J[Histograma]
-    J --> K[Histograma con KDE]
+    J --> K[Funcion de probabilidad]
     K --> L[Calcular curtosis]
     L --> M[Fin]
 ```
