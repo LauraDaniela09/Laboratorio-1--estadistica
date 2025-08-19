@@ -147,7 +147,7 @@ plt.ylabel("Frecuencia ")
 plt.show()
 ```
 <p align="center">
-<img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/dde26283-daea-45b9-83b7-fcc66d5e6ea4" />
+<img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/6e92551a-3ee8-4bc8-bfa2-3dfb60e01537" />
 </p>
 
 Grafica un histograma y nombra los ejes *x* y *y*.
