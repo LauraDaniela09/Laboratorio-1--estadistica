@@ -214,3 +214,17 @@ print("Coeficiente de Variación:", Coeficiente2)
 
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
+A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferentes para despues calcular su valor SNR.
+
+---
++ **Ruido gaussiano**
+
+
+---
+
++ **Ruido impulso**
+
+---
+
++**Ruido artefacto**
+
