@@ -79,7 +79,7 @@ print("promedio=", promedio)
 ```
 Se calcula de forma manual la media usando un bucle `for` y finalmente se imprime este valor.
 
-*Resultado:* promedio= [51.83181363]
+**Resultado:** promedio= [51.83181363]
 
 ---
 
