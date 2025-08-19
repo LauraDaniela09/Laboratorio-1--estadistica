@@ -77,7 +77,8 @@ plt.grid(True)
 plt.show()
 ```
 <p align="center">
-<img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/c08a149a-20e0-46b5-b3e1-1fb07f31fe7a" />
+<img width="583" height="400" alt="image" src="https://github.com/user-attachments/assets/ab0ca852-91ff-4aa7-9ead-cb52de1835a7" />
+
 </p>
 
 Recortar la señal entre las muestras `2,000,000` y `2,010,000` (10,000 muestras). Se recomienda no tomar los valores iniciales ya que pueden ser muy variables mientras la extracción de la señal se estabiliza.
