@@ -99,6 +99,11 @@ print("varianza:", varianza)
 ```
 Calcula la `varianza`, que es la dispersión de los datos con respecto a la media, y posteriormente calcula la `Desviación estándar` que es la raiz cuadrada de la varianza. 
 
+**Resultados:**
++Desviación Estándar: [312.3767537]
+
++varianza: [97579.23625063]
+
 ---
 
 + **Coeficiente de variación**
