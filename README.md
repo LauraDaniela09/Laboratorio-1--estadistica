@@ -129,9 +129,23 @@ plt.xlabel('Voltaje(μv)')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
-<h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
 
 grafica el histograma nuevamente, pero con la curva de la `función de probabilidad`.
+
+---
++ **Curtosis**
+```python
+numerador = sum((x - promedio)**4 for x in signal) / n
+denominador = (sum((x - promedio)**2 for x in signal) / n) ** 2
+curtosis= numerador / denominador
+
+print("Curtosis:", curtosis)
+```
+Calcula la curtosis, la cual describe que tan achatados o afilados son los picos de la señal en comparación con una distribución normal (campana de gauss).
+
+---
+
+<h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
 
 + **visualizacion de la señal extraida del generador biologico**
 ```python
