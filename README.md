@@ -4,6 +4,22 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 ---
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Instalar e importar librerías]
+    B --> C[Cargar señal ECG]
+    C --> D[Graficar señal completa]
+    D --> E[Seleccionar segmento]
+    E --> F[Graficar segmento]
+    F --> G[Calcular media]
+    G --> H[Calcular varianza y Desv. Estándar]
+    H --> I[Coeficiente de variación]
+    I --> J[Histograma]
+    J --> K[Histograma con KDE]
+    K --> L[Calcular curtosis]
+    L --> M[Fin]
+```
+
 + **importación de librerias y carga de señal**
 ```python
 !pip install wfdb
