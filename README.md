@@ -195,5 +195,13 @@ desviacionEstandar2 = varianza2 ** 0.5
 print("Desviación Estándar:", desviacionEstandar2)
 print("varianza:", varianza2)
 ```
++ **coeficiente de variacion**
+```pyton
+  Coeficiente2=(desviacionEstandar2/promedio2)*100
+print("Coeficiente de Variación:", Coeficiente2)
+```
+
+
+
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
