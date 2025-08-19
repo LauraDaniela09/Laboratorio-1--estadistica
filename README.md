@@ -5,7 +5,7 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
 ```mermaid
-flowchart LR
+flowchart TD
     A([Inicio]) --> B[Instalar e importar librerías]
     B --> C[Cargar señal ECG]
     C --> D[Graficar señal completa]
