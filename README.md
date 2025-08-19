@@ -5,25 +5,31 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
 ```mermaid
-flowchart TB
-    A[Inicio] --> B[Instalar e importar librerías]
-    B --> C[Cargar señal ECG]
+flowchart LR
+    A[Inicio] --> B[Instalar e importar librerías] --> C[Cargar señal ECG]
     C --> D[Graficar señal completa]
-    D --> E[Seleccionar segmento]
-    E --> F[Graficar segmento]
+    D --> E[Seleccionar segmento] --> F[Graficar segmento]
     F --> G[Calcular media]
-    G --> H[Calcular varianza y Desv. Estándar]
-    H --> I[Coeficiente de variación]
+    G --> H[Calcular varianza y Desv. Estándar] --> I[Coeficiente de variación]
     I --> J[Histograma]
-    J --> K[Funcion de probabilidad]
-    K --> L[Calcular curtosis]
-    L --> M[Fin]
-  %% Posicionamiento para hacer zigzag visual
-    B --> C
-    D -->| | E
-    F -->| | G
-    H -->| | I
-    J -->| | K
+    J --> K[Función de probabilidad] --> L[Calcular curtosis] --> M[Fin]
+
+    %% Forzar saltos de línea con subgrafos invisibles
+    subgraph fila1 [ ]
+        A --> B --> C
+    end
+
+    subgraph fila2 [ ]
+        D --> E --> F
+    end
+
+    subgraph fila3 [ ]
+        G --> H --> I
+    end
+
+    subgraph fila4 [ ]
+        J --> K --> L --> M
+    end
 ```
 
 
