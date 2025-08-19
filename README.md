@@ -177,5 +177,23 @@ for muestra in signal2:
   promedio2=suma/n
 print("promedio=", promedio2)
 ```
++ **desviacion estandar y varianza**
+```pyton
+suma = 0
+n = 0
+for muestra in signal2:
+    suma += muestra
+    n += 1
+sumaCuadrados2 = 0
+for muestra in signal2:
+    diferencia = muestra - promedio
+    sumaCuadrados2 += diferencia ** 2
+
+varianza2 = sumaCuadrados2 / n
+desviacionEstandar2 = varianza2 ** 0.5
+
+print("Desviación Estándar:", desviacionEstandar2)
+print("varianza:", varianza2)
+```
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
