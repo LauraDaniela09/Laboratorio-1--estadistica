@@ -36,8 +36,6 @@ plt.ylabel("Voltaje(μm)")
 plt.grid(True)
 plt.show()
 
-caracter
-signal=señal[2000000:2010000]
 ```
 <p align="center">
 <img width="800" height="393" alt="image" src="https://github.com/user-attachments/assets/46baf1ac-03c6-494a-8272-ae6b86bde2b9" />
@@ -45,7 +43,7 @@ signal=señal[2000000:2010000]
 
 
 Grafica la señal completa, nombra los ejes (Ej:`muestras v.s voltaje`).
-`caracter` muestra los metadatos, como frecuencia de muestreo, unidades, etc.
+
 
 ---
 
@@ -132,6 +130,8 @@ plt.ylabel('Frecuencia')
 plt.show()
 ```
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
+
+grafica el histograma nuevamente, pero con la curva de la `función de probabilidad`.
 
 + **visualizacion de la señal extraida del generador biologico**
 ```python
