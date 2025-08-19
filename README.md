@@ -18,18 +18,12 @@ flowchart TB
     J --> K[Funcion de probabilidad]
     K --> L[Calcular curtosis]
     L --> M[Fin]
-%% Forzar saltos de línea visuales (posición)
+  %% Posicionamiento para hacer zigzag visual
     B --> C
-    D --> E
-    F --> G
-    H --> I
-    J --> K
-%% Añadir saltos visuales para hacer zigzag
-    C -->| | D
-    E -->| | F
-    G -->| | H
-    I -->| | J
-    K -->| | L
+    D -->| | E
+    F -->| | G
+    H -->| | I
+    J -->| | K
 ```
 
 
