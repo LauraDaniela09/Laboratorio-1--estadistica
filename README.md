@@ -18,7 +18,20 @@ flowchart TB
     J --> K[Funcion de probabilidad]
     K --> L[Calcular curtosis]
     L --> M[Fin]
+%% Forzar saltos de línea visuales (posición)
+    B --> C
+    D --> E
+    F --> G
+    H --> I
+    J --> K
+%% Añadir saltos visuales para hacer zigzag
+    C -->| | D
+    E -->| | F
+    G -->| | H
+    I -->| | J
+    K -->| | L
 ```
+
 
 + **importación de librerias y carga de señal**
 ```python
