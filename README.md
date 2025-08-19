@@ -95,6 +95,7 @@ for muestra in signal:
 print("promedio=", promedio)
 ```
 Se calcula de forma manual la media usando un bucle `for` y finalmente se imprime este valor.
+
 <span style="color: red;">**Resultado:** promedio= [51.83181363]</span>
 
 
