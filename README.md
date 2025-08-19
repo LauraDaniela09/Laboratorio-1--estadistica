@@ -55,8 +55,10 @@ plt.show()
 
 ```
 <p align="center">
-<img width="800" height="393" alt="image" src="https://github.com/user-attachments/assets/46baf1ac-03c6-494a-8272-ae6b86bde2b9" />
+<img width="1034" height="393" alt="image" src="https://github.com/user-attachments/assets/2727c7c5-2d33-49d2-bd44-a4012c0ecd10" />
 </p>
+
+
 
 
 Grafica la señal completa, nombra los ejes (Ej:`muestras v.s voltaje`).
