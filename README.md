@@ -158,7 +158,7 @@ Calcula la curtosis, la cual describe que tan achatados o afilados son los picos
 
 + **visualizacion de la señal extraida del generador biologico**
   
-Inicialmente se extrajo la señal desde un generador de señales, usando un DAQ. Para esto se descargó el programa NI DAQ MX y se configuro como finite samples para extraer 100 muestras. Después en mathlab con Data acquisition toolbox se definió la frecuencia de muestreo. Estos datos organizados en una tabla se exportaron como archivo .csv para finalmente abrir la tabla en Excel.
+Inicialmente se extrajo la señal desde un generador de señales, usando un DAQ. Para esto se descargó el programa NI DAQ MX y se configuro como finite samples para extraer 100 muestras. Después en mathlab con Data acquisition toolbox se definió la frecuencia de muestreo. Estos datos organizados en una tabla se exportaron como archivo `.csv `para finalmente abrir la tabla en Excel.
 
 ```python
 df = pd.read_csv('medicion1.csv')
@@ -177,7 +177,7 @@ signal2= df.iloc[:, 1]
 <img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/83db39ad-3948-4408-97e7-d1b2bed5b1cf" />
 </p>
 
-posteriormente se lee el registro usando una función de pandas llamada pd.read_csv(), y se nombran las columnas x y y, para despues guardarlo en la variable signal2.
+posteriormente se lee el registro usando una función de pandas llamada `pd.read_csv()`, y se nombran las columnas x y y, para despues guardarlo en la variable `signal2`.
   
 + **promedio o media**
   
