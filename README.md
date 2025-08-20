@@ -335,7 +335,10 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
-<p align="center"><img width="1010" height="548" alt="image" src="https://github.com/user-attachments/assets/390cd9e5-b0e9-4ede-b128-2956176186f6" />p<
+
+<p align="center">
+    <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/390cd9e5-b0e9-4ede-b128-2956176186f6" />
+    </p>
 
 ---
 
@@ -365,7 +368,9 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
-<p align="center"><img width="1001" height="548" alt="image" src="https://github.com/user-attachments/assets/8a0f7cc0-ba71-47dd-9bc7-9b9c60d9e9ed" />p<
+<p align="center">
+    <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/8a0f7cc0-ba71-47dd-9bc7-9b9c60d9e9ed" />
+</p>
 
 ---
 
@@ -393,4 +398,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
-<p align="center"><img width="1010" height="548" alt="image" src="https://github.com/user-attachments/assets/6b707d86-d495-4145-8a76-7202facfb432" />p<
+<p align="center">
+    <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/6b707d86-d495-4145-8a76-7202facfb432" />
+</p>
