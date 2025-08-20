@@ -417,7 +417,7 @@ SNR = 10 * np.log10(pot_signal / pot_ruido)
 
 plt.figure(figsize=(12,6))
 plt.plot(t, señal_artefacto, color="red", linewidth=0.8, label="Ruido artefacto")
-plt.plot(t, signal2, color="black", linewidth=1, label="Señal fisiológica")
+plt.plot(t, signal2, color="teal", linewidth=1, label="Señal fisiológica")
 
 plt.title(f"SEÑAL CON RUIDO DE ARTEFACTO, Snr = {SNR:.3f} dB")
 plt.xlabel("TIEMPO [ms]")
