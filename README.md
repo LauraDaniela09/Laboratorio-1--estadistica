@@ -406,7 +406,7 @@ resultado:
 
 ---
 
-+**Ruido artefacto**
++ **Ruido artefacto**
 Este ruido representa alteraciones no deseadas en la señal, que no se encuentran presentes en la fuente original si no que se deben a alteraciones externas a dicha fuente, como movimientos del paciente o fallos en los electrodos. Es similar al ruido de impulso, pero con una mayor probabilidad de ocurrencia (prob_imp = 0.15). Se genera con la misma lógica de np.random.choice, agregando perturbaciones aleatorias.
 ```python
 fs = 1000 
@@ -434,11 +434,12 @@ resultado:
 <p align="center">
     <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/6b707d86-d495-4145-8a76-7202facfb432" />
 </p>
-´fs: Frecuencia de muestreo en hz.
 
-´freq_artefacto: Se genera un ruido de artefacto donde es de baja frecuencia senoida.
++ **fr:** Frecuencia de muestreo en hz.
 
-´señal_artefacto = signal2 + ruido_artefacto: Ruido con ruido de artefacto.
++ **freq_artefacto:** Se genera un ruido de artefacto donde es de baja frecuencia senoida.
 
-´pot_signal: Se utiliza para calcular el SNR.
++ **señal_artefacto:** signal2 + ruido_artefacto: Ruido con ruido de artefacto.
+
++ **pot_signal:** Se utiliza para calcular el SNR.
 
