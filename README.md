@@ -139,7 +139,7 @@ print("Coeficiente de Variacion:", Coeficiente)
 ```
 Mide la variabilidad relativa de los datos con respecto a su media en valor porcentual.
 
-**resultado:**
+**Resultado:**
 
 Coeficiente de Variacion: [602.6737863]
 
@@ -169,6 +169,7 @@ plt.xlabel('Voltaje(μv)')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
+**Resultado:**
 
 grafica el histograma nuevamente, pero con la curva de la `función de probabilidad`.
 
@@ -181,6 +182,10 @@ curtosis= numerador / denominador
 
 print("Curtosis:", curtosis)
 ```
+**Resultado:**
+
++Curtosis: [15.20632096]
+
 Calcula la curtosis, la cual describe que tan achatados o afilados son los picos de la señal en comparación con una distribución normal (campana de gauss).
 
 ---
