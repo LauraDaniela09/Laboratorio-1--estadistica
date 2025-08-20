@@ -216,6 +216,7 @@ Calcula la curtosis, la cual describe que tan achatados o afilados son los picos
 ---
 
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
+
 ```mermaid
 graph TD
     A[Inicio] --> B[Extracción de señal]
