@@ -313,7 +313,7 @@ A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferen
 ---
 + **Ruido gaussiano**
 El ruido gaussiano es un tipo de ruido aleatorio cuyas variaciones siguen una distribución normal.Se define por su media (0 en este caso) y su desviación estándar (0.1, que controla su intensidad). Es común en señales fisiológicas debido a la electrónica del sistema de adquisición y otras fuentes de interferencia aleatoria.
-```payton
+```python
 fs = 1000  
 t = np.arange(len(signal2)) / fs * 1000   
 
@@ -344,7 +344,7 @@ plt.show()
 
 + **Ruido impulso**
 Este ruido se caracteriza por picos abrupto y repentinos en la señal, generados aquí con una probabilidad del 8% (prob_impulso = 0.08). La función np.random.choice determina en qué puntos aparecen los impulsos (1 o 0), y la amplitud se asigna aleatoriamente con valores de ±0.2. Este ruido suele deberse a interferencias externas o fallos en la transmisión de datos.
-```payton
+```python
 fs = 1000   
 t = np.arange(len(signal2)) / fs * 1000   
 
@@ -376,7 +376,7 @@ plt.show()
 
 +**Ruido artefacto**
 Este ruido representa alteraciones no deseadas en la señal, que no se encuentran presentes en la fuente original si no que se deben a alteraciones externas a dicha fuente, como movimientos del paciente o fallos en los electrodos. Es similar al ruido de impulso, pero con una mayor probabilidad de ocurrencia (prob_imp = 0.15). Se genera con la misma lógica de np.random.choice, agregando perturbaciones aleatorias.
-```payton
+```python
 fs = 1000 
 t = np.arange(len(signal2)) / fs * 1000 
 freq_artefacto = 0.5 
