@@ -425,13 +425,13 @@ resultado:
   <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/7397d085-c913-4d82-9b36-a786b417e21d" />
 </p>
 
-+ fs: Frecuencia de muestreo en hz.
++ `fs:` Frecuencia de muestreo en hz.
 
-+ ruido_impulso = np.zeros(len(signal2)): Se genera un ruido de impulso.
++ `ruido_impulso = np.zeros(len(signal2)):` Se genera un ruido de impulso.
 
-+ sseñal_rimpulso = signal2 + ruido_impulso: señal con ruido de impulso.
++ `señal_rimpulso = signal2 + ruido_impulso:` señal con ruido de impulso.
 
-+ pot_signal: Se utiliza para calcular el SNR.
++ `pot_signal:` Se utiliza para calcular el SNR.
 
 ---
 
