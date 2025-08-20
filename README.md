@@ -478,7 +478,7 @@ resultado:
 + `SNR:` 27,627 dB
 
 
- <h1 align="center"><i><Bibliografia</b></i></h1>
+ <h1 align="center"><i><BIBLIOGRAFIA</b></i></h1>
      
      https://physionet.org/about/database/
      https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
