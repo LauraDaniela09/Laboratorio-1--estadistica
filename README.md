@@ -105,7 +105,7 @@ for muestra in signal:
 print("promedio=", promedio)
 ```
 Se calcula de forma manual la media usando un bucle `for` y finalmente se imprime este valor.
-`suma=0`:inicializacion de la variable suma para acomular las sumas de las muestras.`n = 0:inicializa un contador para llevar el número total de muestras. `for muestra in signal:`recorre cada muestra en la señal.`suma = suma + muestra`: suma el valor de la muestra a la variable suma. `n = n + 1`:incrementa el contador n en uno por cada muestra.`promedio = suma / n`: calcula el promedio dividiendo la suma total entre la cantidad de muestras.
+`suma=0`:inicializacion de la variable suma para acomular las sumas de las muestras. `n = 0:inicializa un contador para llevar el número total de muestras. `for muestra in signal:` recorre cada muestra en la señal.`suma = suma + muestra`:  suma el valor de la muestra a la variable suma. `n = n + 1`: incrementa el contador n en uno por cada muestra.`promedio = suma / n`: calcula el promedio dividiendo la suma total entre la cantidad de muestras.
 
 **Resultado:** promedio= [51.83181363]
 
