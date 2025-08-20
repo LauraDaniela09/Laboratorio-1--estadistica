@@ -5,6 +5,7 @@ En este laboratorio exploramos señales fisiológicas de ECG utilizando técnica
 <h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
 
 ```mermaid
+
 graph TD
     A([Inicio]) --> B[Instalar e importar librerías]
     B --> C[Cargar señal ECG]
@@ -18,6 +19,7 @@ graph TD
     J --> K[Funcion de probabilidad]
     K --> L[Calcular curtosis]
     L --> M([Fin])
+
 ```
 
 
