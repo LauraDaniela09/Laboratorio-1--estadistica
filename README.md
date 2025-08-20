@@ -192,7 +192,7 @@ df = pd.read_csv('medicion1.csv')
 x = df.iloc[:, 0]
 y = df.iloc[:, 1]
 plt.figure(figsize=(10, 5))
-plt.plot(x,y)
+plt.plot(x,y,color='springgreen')
 plt.title('Señal extraida del generador')
 plt.xlabel('Tiempo (s)')
 plt.ylabel('Voltaje (mV)')
@@ -201,7 +201,7 @@ plt.show()
 signal2= df.iloc[:, 1]
 ```
 <p align="center">
-<img width="855" height="470" alt="image" src="https://github.com/user-attachments/assets/3497e712-6952-402e-af17-60c4e2ee5619" />
+<img width="750" height="470" alt="image" src="https://github.com/user-attachments/assets/3497e712-6952-402e-af17-60c4e2ee5619" />
 </p>
 
 posteriormente se lee el registro usando una función de pandas llamada `pd.read_csv()`, y se nombran las columnas x y y, para despues guardarlo en la variable `signal2`.
