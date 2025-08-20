@@ -310,13 +310,85 @@ A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferen
 
 ---
 + **Ruido gaussiano**
+El ruido gaussiano es un tipo de ruido aleatorio cuyas variaciones siguen una distribución normal.Se define por su media (0 en este caso) y su desviación estándar (0.1, que controla su intensidad). Es común en señales fisiológicas debido a la electrónica del sistema de adquisición y otras fuentes de interferencia aleatoria.
+```payton
+fs = 1000  
+t = np.arange(len(signal2)) / fs * 1000   
 
+ruido = np.random.normal(0, 0.1, len(signal2))
+señal_rgauss = signal2 + ruido
+
+pot_signal = np.mean(signal2**2)
+pot_ruido  = np.mean(ruido**2)
+SNR = 10 * np.log10(pot_signal / pot_ruido)
+
+plt.figure(figsize=(12,6))
+plt.plot(t, señal_rgauss, color="red", linewidth=0.8, label="Ruido gaussiano")
+plt.plot(t, signal2, color="black", linewidth=1, label="Señal fisiológica")
+
+plt.title(f"SEÑAL CON RUIDO GAUSSIANO, Snr = {SNR:.3f} dB")
+plt.xlabel("TIEMPO [ms]")
+plt.ylabel("VOLTAJE [mV]")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+<p align="center"><img width="1010" height="548" alt="image" src="https://github.com/user-attachments/assets/390cd9e5-b0e9-4ede-b128-2956176186f6" />p<
 
 ---
 
 + **Ruido impulso**
+Este ruido se caracteriza por picos abrupto y repentinos en la señal, generados aquí con una probabilidad del 8% (prob_impulso = 0.08). La función np.random.choice determina en qué puntos aparecen los impulsos (1 o 0), y la amplitud se asigna aleatoriamente con valores de ±0.2. Este ruido suele deberse a interferencias externas o fallos en la transmisión de datos.
+```payton
+fs = 1000   
+t = np.arange(len(signal2)) / fs * 1000   
+
+ruido_impulso = np.zeros(len(signal2))
+num_impulsos = int(0.1 * len(signal2))  
+posiciones = np.random.randint(0, len(signal2), num_impulsos)
+ruido_impulso[posiciones] = np.random.choice([-1, 1], size=num_impulsos) * np.random.uniform(0.5, 1.5, num_impulsos)
+señal_rimpulso = signal2 + ruido_impulso
+pot_signal = np.mean(signal2**2)
+pot_ruido  = np.mean(ruido_impulso**2)
+SNR = 10 * np.log10(pot_signal / pot_ruido)
+
+plt.figure(figsize=(12,6))
+plt.plot(t, señal_rimpulso, color="red", linewidth=0.8, label="Ruido impulsivo")
+plt.plot(t, signal2, color="black", linewidth=1, label="Señal fisiológica")
+
+plt.title(f"SEÑAL CON RUIDO IMPULSIVO, Snr = {SNR:.3f} dB")
+plt.xlabel("TIEMPO [ms]")
+plt.ylabel("VOLTAJE [mV]")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+<p align="center"><img width="1001" height="548" alt="image" src="https://github.com/user-attachments/assets/8a0f7cc0-ba71-47dd-9bc7-9b9c60d9e9ed" />p<
 
 ---
 
 +**Ruido artefacto**
+Este ruido representa alteraciones no deseadas en la señal, que no se encuentran presentes en la fuente original si no que se deben a alteraciones externas a dicha fuente, como movimientos del paciente o fallos en los electrodos. Es similar al ruido de impulso, pero con una mayor probabilidad de ocurrencia (prob_imp = 0.15). Se genera con la misma lógica de np.random.choice, agregando perturbaciones aleatorias.
+```payton
+fs = 1000 
+t = np.arange(len(signal2)) / fs * 1000 
+freq_artefacto = 0.5 
+ruido_artefacto = 0.3 * np.sin(2 * np.pi * freq_artefacto * (t/1000))
 
+señal_artefacto = signal2 + ruido_artefacto
+pot_signal = np.mean(signal2**2)
+pot_ruido  = np.mean(ruido_artefacto**2)
+SNR = 10 * np.log10(pot_signal / pot_ruido)
+
+plt.figure(figsize=(12,6))
+plt.plot(t, señal_artefacto, color="red", linewidth=0.8, label="Ruido artefacto")
+plt.plot(t, signal2, color="black", linewidth=1, label="Señal fisiológica")
+
+plt.title(f"SEÑAL CON RUIDO DE ARTEFACTO, Snr = {SNR:.3f} dB")
+plt.xlabel("TIEMPO [ms]")
+plt.ylabel("VOLTAJE [mV]")
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+<p align="center"><img width="1010" height="548" alt="image" src="https://github.com/user-attachments/assets/6b707d86-d495-4145-8a76-7202facfb432" />p<
