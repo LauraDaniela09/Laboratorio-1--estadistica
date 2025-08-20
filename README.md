@@ -198,6 +198,8 @@ Calcula la curtosis, la cual describe que tan achatados o afilados son los picos
   
 Inicialmente se extrajo la señal desde un generador de señales, usando un DAQ. Para esto se descargó el programa NI DAQ MX y se configuro como finite samples para extraer 100 muestras. Después en mathlab con Data acquisition toolbox se definió la frecuencia de muestreo. Estos datos organizados en una tabla se exportaron como archivo `.csv `para finalmente abrir la tabla en Excel.
 
+posteriormente se lee el registro usando una función de pandas llamada `pd.read_csv()`, y se nombran las columnas x y y, para despues guardarlo en la variable `signal2`.
+
 ```python
 df = pd.read_csv('medicion1.csv')
 x = df.iloc[:, 0]
@@ -211,11 +213,12 @@ plt.grid(True)
 plt.show()
 signal2= df.iloc[:, 1]
 ```
+
 <p align="center">
 <img width="750" height="470" alt="image" src="https://github.com/user-attachments/assets/3497e712-6952-402e-af17-60c4e2ee5619" />
 </p>
 
-posteriormente se lee el registro usando una función de pandas llamada `pd.read_csv()`, y se nombran las columnas x y y, para despues guardarlo en la variable `signal2`.
+  Se vuelven a calcular manualmente los estadisticos descriptivos de la señal como se hizo en la parte A.
   
 + **promedio o media**
   
@@ -229,6 +232,10 @@ for muestra in signal2:
   promedio2=suma/n
 print("promedio=", promedio2)
 ```
+**resultado:**
+
+promedio= 1.2196760663788881
+
 + **desviacion estandar y varianza**
 ```pyton
 suma = 0
@@ -247,12 +254,21 @@ desviacionEstandar2 = varianza2 ** 0.5
 print("Desviación Estándar:", desviacionEstandar2)
 print("varianza:", varianza2)
 ```
+**resultados**
+
+Desviación Estándar: [50.61372746]
+varianza: [2561.74940787]
+
 + **coeficiente de variacion**
 ```pyton
   Coeficiente2=(desviacionEstandar2/promedio2)*100
 print("Coeficiente de Variación:", Coeficiente2)
 ```
+**resultado:**
 
+Coeficiente de Variación: [4149.76802939]
+
++ **histograma y funcion de probabilidad**
 
 
 
