@@ -307,33 +307,17 @@ Coeficiente de Variación: [32.891726607824516]
 + **histograma y funcion de probabilidad**
 ```python
 plt.figure()
-plt.hist(signal2,bins=100,density=0)
+plt.hist(signal2,bins=100,density=0,color='springgreen')
 plt.title("Histograma señal generador")
 plt.xlabel("Voltaje(μv)")
 plt.ylabel("Frecuencia ")
 plt.show()
 ```
-
-```python
-sns.histplot(signal2, kde=True, stat="density", bins=30, color='red')
-plt.hist(signal2, bins=30, edgecolor='blue')
-plt.title('Función de probabilidad')
-plt.xlabel('Voltaje(μv)')
-plt.ylabel('Frecuencia')
-plt.show()
-```
-
-+ **Curtosis**
-```python
-n = 100
-numerador2 = sum((x - promedio2)**4 for x in signal2) / n
-denominador2 = (sum((x - promedio2)**2 for x in signal2) / n) ** 2
-curtosis2 = numerador2 / denominador2
-print("Curtosis:", curtosis2)
-```
 **Resultado:**
 
-Curtosis: [7.689155028469512]
+<p align="center">
+<img width="577" height="455" alt="image" src="https://github.com/user-attachments/assets/3b08dc29-e108-40db-bf3e-ffa6b5d50d04" />
+</p>
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
 
@@ -396,7 +380,7 @@ plt.show()
 ```
 resultado:
 <p align="center">
-    <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/390cd9e5-b0e9-4ede-b128-2956176186f6" />
+   <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/f4916579-6f3b-4683-a9f1-7c8316098115" />
     </p>
 
 ---
@@ -429,7 +413,7 @@ plt.show()
 ```
 resultado:
 <p align="center">
-    <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/8a0f7cc0-ba71-47dd-9bc7-9b9c60d9e9ed" />
+  <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/7397d085-c913-4d82-9b36-a786b417e21d" />
 </p>
 
 ---
@@ -460,15 +444,15 @@ plt.show()
 ```
 resultado:
 <p align="center">
-    <[Imagen de WhatsApp 2025-08-19 a las 22 51 20_90646a03](https://github.com/user-attachments/assets/9040f7eb-517c-4e40-adc7-09da0468beed) />
-
+   <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/5e2d1a7a-0544-4d59-b81d-26ce885452c3" />
 </p>
 
-+ **fr:** Frecuencia de muestreo en hz.
++ `fs:` Frecuencia de muestreo en hz.
 
-+ **freq_artefacto:** Se genera un ruido de artefacto donde es de baja frecuencia senoida.
++ `freq_artefacto:` Se genera un ruido de artefacto donde es de baja frecuencia senoida.
 
-+ **señal_artefacto:** signal2 + ruido_artefacto: Ruido con ruido de artefacto.
++ `señal_artefacto:` signal2 + ruido_artefacto: Ruido con ruido de artefacto.
 
-+ **pot_signal:** Se utiliza para calcular el SNR.
++ `pot_signal:` Se utiliza para calcular el SNR.
+
 
