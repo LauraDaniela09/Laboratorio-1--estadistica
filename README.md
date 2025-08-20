@@ -309,7 +309,6 @@ Coeficiente de Variación: [4149.76802939]
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
 
-
 ```mermaid
 graph TD
     A[Inicio] --> B[Cargar señal fisiológica desde archivo CSV]
@@ -335,10 +334,10 @@ graph TD
     G3 --> G4[Visualizar señal con ruido de artefacto]
 
     E4 --> H[Fin]
-    F4 --> H
-    G4 --> H
-
+    F4 --> H
+    G4 --> H
 ```
+
 
 
 A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferentes para despues calcular su valor SNR.
