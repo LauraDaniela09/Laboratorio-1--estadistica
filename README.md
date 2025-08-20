@@ -142,6 +142,8 @@ Coeficiente=(desviacionEstandar/promedio)*100
 print("Coeficiente de Variacion:", Coeficiente)
 ```
 Mide la variabilidad relativa de los datos con respecto a su media en valor porcentual.
+`Coeficiente = (desviacionEstandar / promedio) * 100:`calcula el coeficiente de variación dividiendo la desviación estándar entre el promedio y multiplicando por 100 para obtener un porcentaje.
+`print("Coeficiente de Variacion:", Coeficiente):`Se muestra el resultado del coeficiente de variación en pantalla.
 
 **Resultado:**
 
