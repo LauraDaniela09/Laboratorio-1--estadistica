@@ -78,15 +78,16 @@ plt.ylabel("Voltaje(μm)")
 plt.grid(True)
 plt.show()
 ```
+
+Recortar la señal entre las muestras `2,000,000` y `2,010,000` (10,000 muestras). Se recomienda no tomar los valores iniciales ya que pueden ser muy variables mientras la extracción de la señal se estabiliza.
+Se grafica esta nueva señal llamada `signal`.
+
 **Resultado:**
 
 <p align="center">
 <img width="583" height="400" alt="image" src="https://github.com/user-attachments/assets/ab0ca852-91ff-4aa7-9ead-cb52de1835a7" />
 
 </p>
-
-Recortar la señal entre las muestras `2,000,000` y `2,010,000` (10,000 muestras). Se recomienda no tomar los valores iniciales ya que pueden ser muy variables mientras la extracción de la señal se estabiliza.
-Se grafica esta nueva señal llamada `signal`.
 
 ---
 
@@ -154,13 +155,14 @@ plt.xlabel("Voltaje(μv)")
 plt.ylabel("Frecuencia ")
 plt.show()
 ```
+Grafica un histograma y nombra los ejes *x* y *y*.
+
 **Resultado:**
 
 <p align="center">
 <img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/6e92551a-3ee8-4bc8-bfa2-3dfb60e01537" />
 </p>
 
-Grafica un histograma y nombra los ejes *x* y *y*.
 ```python
 sns.histplot(signal, kde=True, bins=30, color='red')
 plt.hist(signal, bins=30, edgecolor='blue')
@@ -169,9 +171,9 @@ plt.xlabel('Voltaje(μv)')
 plt.ylabel('Frecuencia')
 plt.show()
 ```
-**Resultado:**
-
 grafica el histograma nuevamente, pero con la curva de la `función de probabilidad`.
+
+**Resultado:**
 
 ---
 + **Curtosis**
@@ -182,11 +184,11 @@ curtosis= numerador / denominador
 
 print("Curtosis:", curtosis)
 ```
+Calcula la curtosis, la cual describe que tan achatados o afilados son los picos de la señal en comparación con una distribución normal (campana de gauss).
+
 **Resultado:**
 
-+Curtosis: [15.20632096]
-
-Calcula la curtosis, la cual describe que tan achatados o afilados son los picos de la señal en comparación con una distribución normal (campana de gauss).
+*Curtosis: [15.20632096]
 
 ---
 
