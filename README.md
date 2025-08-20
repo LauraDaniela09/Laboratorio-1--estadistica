@@ -434,3 +434,11 @@ resultado:
 <p align="center">
     <img width="900" height="250" alt="image" src="https://github.com/user-attachments/assets/6b707d86-d495-4145-8a76-7202facfb432" />
 </p>
+fs: Frecuencia de muestreo en hz.
+
+freq_artefacto: Se genera un ruido de artefacto donde es de baja frecuencia senoida.
+
+señal_artefacto = signal2 + ruido_artefacto: Ruido con ruido de artefacto.
+
+pot_signal: Se utiliza para calcular el SNR.
+
