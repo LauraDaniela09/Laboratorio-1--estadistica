@@ -188,7 +188,7 @@ grafica el histograma nuevamente, pero con la curva de la `función de probabili
  
 `stat="count"`: el eje Y muestra la cantidad de veces que aparece cada valor (frecuencia).
 
-`kde=True`: agrega una curva suave encima del histograma (función de densidad estimada)
+`kde=True`: agrega la curva de funcion de probabilidad encima del histograma realizado.
 
 ---
 + **Curtosis**
