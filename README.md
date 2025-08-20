@@ -305,6 +305,23 @@ print("Coeficiente de Variación:", Coeficiente2)
 Coeficiente de Variación: [32.891726607824516]
 
 + **histograma y funcion de probabilidad**
+```python
+plt.figure()
+plt.hist(signal2,bins=100,density=0)
+plt.title("Histograma señal generador")
+plt.xlabel("Voltaje(μv)")
+plt.ylabel("Frecuencia ")
+plt.show()
+```
+
+```python
+sns.histplot(signal2, kde=True, stat="density", bins=30, color='red')
+plt.hist(signal2, bins=30, edgecolor='blue')
+plt.title('Función de probabilidad')
+plt.xlabel('Voltaje(μv)')
+plt.ylabel('Frecuencia')
+plt.show()
+```
 
 + **Curtosis**
 ```python
