@@ -149,7 +149,7 @@ Coeficiente de Variacion: [602.6737863]
 + **Histograma y función de probabilidad**
 ```python
 plt.figure()
-plt.hist(signal,bins=100,density=0,color='blue')
+plt.hist(signal,bins=100,density=0,color='deeppink')
 plt.title("Histograma")
 plt.xlabel("Voltaje(μv)")
 plt.ylabel("Frecuencia ")
@@ -160,7 +160,7 @@ Grafica un histograma y nombra los ejes *x* y *y*.
 **Resultado:**
 
 <p align="center">
-<img width="500" height="455" alt="image" src="https://github.com/user-attachments/assets/6e92551a-3ee8-4bc8-bfa2-3dfb60e01537" />
+<img width="585" height="455" alt="image" src="https://github.com/user-attachments/assets/23d93aed-f0e0-49fb-8b69-e6fc61813c20" />
 </p>
 
 ```python
