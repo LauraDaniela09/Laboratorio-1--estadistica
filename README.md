@@ -275,12 +275,13 @@ promedio= 1.2196760663788881
 ```python
 suma = 0
 n = 0
+diferencia= 0
 for muestra in signal2:
     suma += muestra
     n += 1
 sumaCuadrados2 = 0
 for muestra in signal2:
-    diferencia = muestra - promedio
+    diferencia = muestra - promedio2
     sumaCuadrados2 += diferencia ** 2
 
 varianza2 = sumaCuadrados2 / n
@@ -291,8 +292,8 @@ print("varianza:", varianza2)
 ```
 **Resultados**
 
-Desviación Estándar: [50.61372746]
-varianza: [2561.74940787]
+Desviación Estándar: [0.40117251725441216]
+varianza: [0.16093938860024162]
 
 + **coeficiente de variacion**
 ```python
@@ -301,11 +302,21 @@ print("Coeficiente de Variación:", Coeficiente2)
 ```
 **Resultado:**
 
-Coeficiente de Variación: [4149.76802939]
+Coeficiente de Variación: [32.891726607824516]
 
 + **histograma y funcion de probabilidad**
 
++ **Curtosis**
+```python
+n = 100
+numerador2 = sum((x - promedio2)**4 for x in signal2) / n
+denominador2 = (sum((x - promedio2)**2 for x in signal2) / n) ** 2
+curtosis2 = numerador2 / denominador2
+print("Curtosis:", curtosis2)
+```
+**Resultado:**
 
+Curtosis: [7.689155028469512]
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
 
