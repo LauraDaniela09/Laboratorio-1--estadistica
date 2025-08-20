@@ -46,7 +46,7 @@ Nombra la señal `señal`.
 + **visualización señal**
 ```python
 plt.figure(figsize=(12, 4))
-plt.plot(señal)
+plt.plot(señal,color="deeppink")
 plt.title("Visualización de la Señal Médica")
 plt.xlabel("Muestras")
 plt.ylabel("Voltaje(μm)")
@@ -71,7 +71,7 @@ Grafica la señal completa, nombra los ejes (Ej:`muestras v.s voltaje`).
 + **Selección de un segmento de la señal**
 ```python
 signal=señal[2000000:2010000]
-plt.plot(signal)
+plt.plot(signal,color="deeppink")
 plt.title("Visualización de la Señal Médica")
 plt.xlabel("Muestras")
 plt.ylabel("Voltaje(μm)")
@@ -138,6 +138,10 @@ Coeficiente=(desviacionEstandar/promedio)*100
 print("Coeficiente de Variacion:", Coeficiente)
 ```
 Mide la variabilidad relativa de los datos con respecto a su media en valor porcentual.
+
+**resultado:**
+
+Coeficiente de Variacion: [602.6737863]
 
 ---
 
