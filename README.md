@@ -392,6 +392,7 @@ resultado:
 
 + `pot_signal:` Se utiliza para calcular el SNR.
 
++ `SRN:` 21.713 dB
 ---
 
 + **Ruido impulso**
@@ -433,6 +434,8 @@ resultado:
 
 + `pot_signal:` Se utiliza para calcular el SNR.
 
++ `SRN:` 11.675dB 
+
 ---
 
 + **Ruido artefacto**
@@ -472,4 +475,5 @@ resultado:
 
 + `pot_signal:` Se utiliza para calcular el SNR.
 
-
++ `SNR:` 27,627 dB
+ 
