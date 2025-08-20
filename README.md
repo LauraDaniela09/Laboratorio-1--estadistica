@@ -432,7 +432,8 @@ plt.show()
 ```
 resultado:
 <p align="center">
-    <img ![Imagen de WhatsApp 2025-08-19 a las 22 51 20_748f04e4](https://github.com/user-attachments/assets/362eff32-29c1-4857-bf30-05a6c995e001)/>
+    <[Imagen de WhatsApp 2025-08-19 a las 22 51 20_90646a03](https://github.com/user-attachments/assets/9040f7eb-517c-4e40-adc7-09da0468beed) />
+
 </p>
 
 + **fr:** Frecuencia de muestreo en hz.
