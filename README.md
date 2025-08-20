@@ -180,6 +180,12 @@ grafica el histograma nuevamente, pero con la curva de la `función de probabili
 <img width="862" height="400" alt="image" src="https://github.com/user-attachments/assets/cbeb7cbb-7da1-4ebc-9f79-3a2211490135" />
 </p>
 
+`sns.histplot`:Es una funcion de seaborn para realizar histogramas y de forma estilizada 
+`signal`: se guardan los datos obtenidos de la señal descargada 
+ `bins=100`: divide los datos en 100 barras (más detalle en el histograma).
+`stat="count"`: el eje Y muestra la cantidad de veces que aparece cada valor (frecuencia).
+
+kde=True: agrega una curva suave encima del histograma (función de densidad estimada)
 ---
 + **Curtosis**
 ```python
