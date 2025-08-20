@@ -232,7 +232,7 @@ for muestra in signal2:
   promedio2=suma/n
 print("promedio=", promedio2)
 ```
-**resultado:**
+**Resultado:**
 
 promedio= 1.2196760663788881
 
@@ -254,7 +254,7 @@ desviacionEstandar2 = varianza2 ** 0.5
 print("Desviación Estándar:", desviacionEstandar2)
 print("varianza:", varianza2)
 ```
-**resultados**
+**Resultados**
 
 Desviación Estándar: [50.61372746]
 varianza: [2561.74940787]
@@ -264,7 +264,7 @@ varianza: [2561.74940787]
   Coeficiente2=(desviacionEstandar2/promedio2)*100
 print("Coeficiente de Variación:", Coeficiente2)
 ```
-**resultado:**
+**Resultado:**
 
 Coeficiente de Variación: [4149.76802939]
 
