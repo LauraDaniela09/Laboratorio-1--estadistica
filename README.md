@@ -223,9 +223,8 @@ graph TD
     B --> C[Leyendo datos con pandas]
     C --> D[Visualización de señal]
     D --> E[Cálculo estadísticos]
-    E --> F[Mostrar resultados]
-    F --> G[Histograma y función de probabilidad]
-    G --> H[Fin]
+    E --> F[Histograma y función de probabilidad]
+    F --> G[Fin]
  ```
  
 + **visualizacion de la señal extraida del generador biologico**
