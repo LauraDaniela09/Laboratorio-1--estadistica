@@ -257,7 +257,7 @@ signal2= df.iloc[:, 1]
   
 + **promedio o media**
   
-```pyton
+```python
 suma=0
 n = 0
 for muestra in signal2:
@@ -272,7 +272,7 @@ print("promedio=", promedio2)
 promedio= 1.2196760663788881
 
 + **desviacion estandar y varianza**
-```pyton
+```python
 suma = 0
 n = 0
 for muestra in signal2:
@@ -295,7 +295,7 @@ Desviación Estándar: [50.61372746]
 varianza: [2561.74940787]
 
 + **coeficiente de variacion**
-```pyton
+```python
   Coeficiente2=(desviacionEstandar2/promedio2)*100
 print("Coeficiente de Variación:", Coeficiente2)
 ```
