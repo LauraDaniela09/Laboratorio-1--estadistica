@@ -310,33 +310,30 @@ Coeficiente de Variación: [4149.76802939]
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
 
 ```mermaid
-
 graph TD
-    A[Inicio] --> B[Cargar señal fisiológica desde archivo CSV]
-    B --> C[Preprocesamiento de la señal]
-    C --> D[Visualizar señal original]
+    A[Inicio] --> B[Cargar señal desde CSV]
+    B --> C[Visualizar señal original]
+    C --> D[Agregar ruido gaussiano]
+    D --> D1[Generar ruido normal (media=0, std=0.1)]
+    D1 --> D2[Sumar ruido a la señal]
+    D2 --> D3[Calcular SNR]
+    D3 --> D4[Graficar resultado]
 
-    D --> E[Simular Ruido Gaussiano]
-    E --> E1[Generar ruido normal (media=0, std=0.1)]
-    E1 --> E2[Sumar ruido a la señal]
+    C --> E[Agregar ruido impulsivo]
+    E --> E1[Definir probabilidad de impulso (8%)]
+    E1 --> E2[Insertar impulsos aleatorios]
     E2 --> E3[Calcular SNR]
-    E3 --> E4[Visualizar señal con ruido gaussiano]
+    E3 --> E4[Graficar resultado]
 
-    D --> F[Simular Ruido Impulsivo]
-    F --> F1[Definir probabilidad y amplitud de impulsos]
-    F1 --> F2[Agregar impulsos aleatorios a la señal]
+    C --> F[Agregar ruido de artefacto]
+    F --> F1[Generar artefacto senoidal (0.5 Hz)]
+    F1 --> F2[Sumar artefacto a la señal]
     F2 --> F3[Calcular SNR]
-    F3 --> F4[Visualizar señal con ruido impulsivo]
+    F3 --> F4[Graficar resultado]
 
-    D --> G[Simular Ruido de Artefacto]
-    G --> G1[Generar artefacto senoidal de baja frecuencia]
-    G1 --> G2[Sumar artefacto a la señal]
-    G2 --> G3[Calcular SNR]
-    G3 --> G4[Visualizar señal con ruido de artefacto]
-
-    E4 --> H[Fin]
-    F4 --> H
-    G4 --> H
+    D4 --> G[Fin]
+    E4 --> G
+    F4 --> G
 ```
 
 A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferentes para despues calcular su valor SNR.
