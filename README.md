@@ -214,7 +214,17 @@ Calcula la curtosis, la cual describe que tan achatados o afilados son los picos
 ---
 
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
-
+```mermaid
+graph TD
+    A[Inicio] --> B[Extracción de señal]
+    B --> C[Leyendo datos con pandas]
+    C --> D[Visualización de señal]
+    D --> E[Cálculo estadísticos]
+    E --> F[Mostrar resultados]
+    F --> G[Histograma y función de probabilidad]
+    G --> H[Fin]
+ ```
+ 
 + **visualizacion de la señal extraida del generador biologico**
   
 Inicialmente se extrajo la señal desde un generador de señales, usando un DAQ. Para esto se descargó el programa NI DAQ MX y se configuro como finite samples para extraer 100 muestras. Después en mathlab con Data acquisition toolbox se definió la frecuencia de muestreo. Estos datos organizados en una tabla se exportaron como archivo `.csv `para finalmente abrir la tabla en Excel.
