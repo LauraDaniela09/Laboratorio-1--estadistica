@@ -164,11 +164,12 @@ Grafica un histograma y nombra los ejes *x* y *y*.
 </p>
 
 ```python
-sns.histplot(signal, kde=True, bins=30, color='red')
-plt.hist(signal, bins=30, edgecolor='blue')
-plt.title('Función de probabilidad')
-plt.xlabel('Voltaje(μv)')
+plt.figure(figsize=(10, 5))
+sns.histplot(signal, bins=100, stat="count", kde=True)
+plt.title('Histograma con función KDE')
+plt.xlabel('Voltaje (μV)')
 plt.ylabel('Frecuencia')
+plt.grid(True)
 plt.show()
 ```
 grafica el histograma nuevamente, pero con la curva de la `función de probabilidad`.
@@ -178,6 +179,7 @@ grafica el histograma nuevamente, pero con la curva de la `función de probabili
 <p align="center">
 <img width="862" height="400" alt="image" src="https://github.com/user-attachments/assets/cbeb7cbb-7da1-4ebc-9f79-3a2211490135" />
 </p>
+
 ---
 + **Curtosis**
 ```python
