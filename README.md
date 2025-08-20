@@ -125,21 +125,8 @@ print("varianza:", varianza)
 ```
 Calcula la `varianza`, que es la dispersión de los datos con respecto a la media, y posteriormente calcula la `Desviación estándar` que es la raiz cuadrada de la varianza. 
 
-`sumaCuadrados = 0:`  crea una variable para guardar la suma de las diferencias al cuadrado.
-
-`for muestra in signal:` recorre cada dato (muestra) en la señal.
-
-`diferencia = muestra - promedio:` calcula cuánto se aleja la muestra del promedio.
-
-`sumaCuadrados += diferencia ** 2:` eleva la diferencia al cuadrado y se acumula en sumaCuadrados.
-
-`varianza = sumaCuadrados / n:` calcula la varianza dividiendo la suma total por el número de datos.
-
-`desviacionEstandar = varianza ** 0.5:` obtiene la desviación estándar sacando la raíz cuadrada de la varianza.
-
-`print("Desviación Estándar:", desviacionEstandar):` muestra el valor de la desviación estándar.
-
-`print("varianza:", varianza):` muestra el valor de la varianza.
+`sumaCuadrados = 0:`  crea una variable para guardar la suma de las diferencias al cuadrado.`for muestra in signal:` recorre cada dato (muestra) en la señal.`diferencia = muestra - promedio:` calcula cuánto se aleja la muestra del promedio.`sumaCuadrados += diferencia ** 2:` eleva la diferencia al cuadrado y se acumula en sumaCuadrados.
+`varianza = sumaCuadrados / n:` calcula la varianza dividiendo la suma total por el número de datos.`desviacionEstandar = varianza ** 0.5:` obtiene la desviación estándar sacando la raíz cuadrada de la varianza.`print("Desviación Estándar:", desviacionEstandar):` muestra el valor de la desviación estándar.`print("varianza:", varianza):` muestra el valor de la varianza.
 
 **Resultados:**
 
