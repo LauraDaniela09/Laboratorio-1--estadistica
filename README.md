@@ -175,6 +175,9 @@ grafica el histograma nuevamente, pero con la curva de la `función de probabili
 
 **Resultado:**
 
+<p align="center">
+<img width="862" height="400" alt="image" src="https://github.com/user-attachments/assets/cbeb7cbb-7da1-4ebc-9f79-3a2211490135" />
+</p>
 ---
 + **Curtosis**
 ```python
