@@ -384,6 +384,14 @@ resultado:
    <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/f4916579-6f3b-4683-a9f1-7c8316098115" />
     </p>
 
++ `fs:` Frecuencia de muestreo en hz.
+
++ `ruido = np.random.normal:` Se genera un ruido gaussiano.
+
++ `señal_rgauss = signal2 + ruido:` señal con ruido gaussiano.
+
++ `pot_signal:` Se utiliza para calcular el SNR.
+
 ---
 
 + **Ruido impulso**
@@ -416,6 +424,14 @@ resultado:
 <p align="center">
   <img width="950" height="547" alt="image" src="https://github.com/user-attachments/assets/7397d085-c913-4d82-9b36-a786b417e21d" />
 </p>
+
++ fs: Frecuencia de muestreo en hz.
+
++ ruido_impulso = np.zeros(len(signal2)): Se genera un ruido de impulso.
+
++ sseñal_rimpulso = signal2 + ruido_impulso: señal con ruido de impulso.
+
++ pot_signal: Se utiliza para calcular el SNR.
 
 ---
 
