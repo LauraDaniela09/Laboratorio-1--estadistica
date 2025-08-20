@@ -293,6 +293,7 @@ print("varianza:", varianza2)
 **Resultados**
 
 Desviación Estándar: [0.40117251725441216]
+
 varianza: [0.16093938860024162]
 
 + **coeficiente de variacion**
