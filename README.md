@@ -313,20 +313,21 @@ Coeficiente de Variación: [4149.76802939]
 graph TD
     A[Inicio] --> B[Cargar señal desde CSV]
     B --> C[Visualizar señal original]
+    
     C --> D[Agregar ruido gaussiano]
-    D --> D1[Generar ruido normal (media=0, std=0.1)]
+    D --> D1[Generar ruido normal media 0]
     D1 --> D2[Sumar ruido a la señal]
     D2 --> D3[Calcular SNR]
     D3 --> D4[Graficar resultado]
-
+    
     C --> E[Agregar ruido impulsivo]
-    E --> E1[Definir probabilidad de impulso (8%)]
+    E --> E1[Definir probabilidad de impulso]
     E1 --> E2[Insertar impulsos aleatorios]
     E2 --> E3[Calcular SNR]
     E3 --> E4[Graficar resultado]
 
     C --> F[Agregar ruido de artefacto]
-    F --> F1[Generar artefacto senoidal (0.5 Hz)]
+    F --> F1[Generar señal senoidal baja frecuencia]
     F1 --> F2[Sumar artefacto a la señal]
     F2 --> F3[Calcular SNR]
     F3 --> F4[Graficar resultado]
@@ -334,7 +335,9 @@ graph TD
     D4 --> G[Fin]
     E4 --> G
     F4 --> G
+    
 ```
+
 
 A la señal de la parte B (signal2) se le contamina con 3 tipos de ruido diferentes para despues calcular su valor SNR.
 
